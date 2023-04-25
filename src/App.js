@@ -9,6 +9,11 @@ import GithubHome from "./assets/githubHome.png";
 import LinkedInHome from "./assets/linkedInHome.png";
 import ArrowDownHome from "./assets/arrowDownHome.png";
 import AboutMeIcon from "./assets/aboutMeIcon.png";
+import CssIcon from './assets/cssIcon.png'
+import Html5Icon from './assets/html5Icon.png'
+import JavascriptIcon from './assets/javascriptIcon.png'
+import ReactIcon from './assets/reactIcon.png'
+
 
 function App() {
   return (
@@ -73,7 +78,7 @@ function App() {
                     width: "58px",
                     height: "30px",
                   }}
-                  alt="githubIcon"
+                  alt="Github Icon"
                 ></img>
                 <img
                   src={LinkedInHome}
@@ -81,7 +86,7 @@ function App() {
                     width: "55px",
                     height: "30px",
                   }}
-                  alt="linkedInIcon"
+                  alt="LinkedIn Icon"
                 ></img>
                 <img
                   src={EmailHome}
@@ -89,7 +94,7 @@ function App() {
                     width: "60px",
                     height: "30px",
                   }}
-                  alt="emailIcon"
+                  alt="Email Icon"
                 ></img>
               </div>
 
@@ -118,7 +123,7 @@ function App() {
                   height: "40px",
                   marginTop: "60px",
                 }}
-                alt="continueDownIcon"
+                alt="Continue Down Icon"
               ></img>
             </div>
           </div>
@@ -170,6 +175,59 @@ function App() {
           </div>
         </div>
         {/* -------------------- End of About Me Card --------------------- */}
+
+        {/* --------------------- Skills Card ------------------------- */}
+
+        <div class="card mt-4">
+          <div class="card-body">
+            <h1 class="justify-content-center row" style={{ color: "#4F58A0" }}>
+              Skills
+            </h1>
+            <div class="row justify-content-center my-5">
+              <img
+                src={JavascriptIcon}
+                style={{
+                  width: "80px",
+                  height: "75px"
+                }}
+                alt="Javascript Icon"
+              ></img>
+              <img
+                src={ReactIcon}
+                style={{
+                  width: "90px",
+                  height: "75px"
+                }}
+                alt="React Icon"
+              ></img>
+              <img
+                src={Html5Icon}
+                style={{
+                  width: "120px",
+                  height: "100px",
+                  position: "relative",
+                  bottom: "15px"
+                }}
+                alt="Html Icon"
+              ></img>
+              <img
+                src={CssIcon}
+                style={{
+                  width: "90px",
+                  height: "90px",
+                  position: "relative",
+                  bottom: "13px"
+                }}
+                alt="Css Icon"
+              ></img>
+            </div>
+            <div class="content">
+                <p>
+                  Dustin
+                </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
