@@ -13,6 +13,8 @@ import CssIcon from "./assets/cssIcon.png";
 import Html5Icon from "./assets/html5Icon.png";
 import JavascriptIcon from "./assets/javascriptIcon.png";
 import ReactIcon from "./assets/reactIcon.png";
+import PremergencyIcon from "./assets/premergencyInc.svg";
+import PremergencyDemo from "./assets/video/CP-CME-Demo.mp4";
 
 function App() {
   return (
@@ -262,9 +264,80 @@ function App() {
 
         {/* --------------- Experience Card -------------------- */}
         <div class="card mt-4">
-          <div class="card-body">This is some text within a card body.</div>
+          <div class="card-body">
+            <h1 class="justify-content-center row" style={{ color: "#4F58A0" }}>
+              Experience
+            </h1>
+            <h3 class="text-center justify-content-center row">
+            Community Paramedic <br/> Cross 
+Platform App at Premergeny Inc
+            </h3>
+            <div class="row justify-content-center my-3">
+              <img
+                src={PremergencyIcon}
+                style={{
+                  width: "300px",
+                }}
+                alt="Premergency Inc Icon"
+              ></img>
+            </div>
+            <div class="content">
+              <div>
+                <p>
+                  As a design team leader at Premergency Inc, I led a talented
+                  group of designers and developers in creating a user-centric
+                  paramedic application for both Apple and Android platforms.
+                  Our primary goal was to streamline the process for paramedics
+                  to access patient information in the community, transitioning
+                  from traditional paper methods to a more efficient and
+                  effective digital solution.
+                </p>
+                <p>
+                  Our user experience design process began with extensive
+                  research and empathizing with our target users: paramedics. We
+                  focused on understanding their needs, challenges, and
+                  expectations when attending to patients in the field. With a
+                  solid foundation of user insights, we moved on to prototyping
+                  and iterative design, ensuring that the app's interface was
+                  both intuitive and responsive. Throughout the development
+                  process, we implemented functional components and styling
+                  using React, a popular JavaScript library for building user
+                  interfaces.
+                </p>
+                <p>
+                  In addition to the paramedic application, our team was also
+                  responsible for designing and developing an Admin portal. This
+                  portal enabled easy querying of results and facilitated better
+                  organization within the company. By creating a seamless
+                  experience for both paramedics and administrative staff, we
+                  successfully delivered a comprehensive solution that improved
+                  patient care and streamlined operations for Premergency Inc.
+                </p>
+              </div>
+              <h2 class="row justify-content-center">Demo Below</h2>
+              <video
+                src={PremergencyDemo}
+                width="420"
+                height="540"
+                controls
+              ></video>
+            </div>
+          </div>
         </div>
         {/* ----------------End of Experience Card 1--------------- */}
+
+        {/* -------------- Experience Card 2 --------------------- */}
+        <div class="card mt-4">
+          <div class="card-body">
+          <h1 class="justify-content-center row" style={{ color: "#4F58A0" }}>
+              Experience
+            </h1>
+            <h3 class="text-center justify-content-center row">
+            Canadian Sales Calculator <br/>
+React App on Google Play Store
+            </h3>
+          </div>
+        </div>
       </div>
     </div>
   );
