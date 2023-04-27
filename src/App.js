@@ -9,11 +9,10 @@ import GithubHome from "./assets/githubHome.png";
 import LinkedInHome from "./assets/linkedInHome.png";
 import ArrowDownHome from "./assets/arrowDownHome.png";
 import AboutMeIcon from "./assets/aboutMeIcon.png";
-import CssIcon from './assets/cssIcon.png'
-import Html5Icon from './assets/html5Icon.png'
-import JavascriptIcon from './assets/javascriptIcon.png'
-import ReactIcon from './assets/reactIcon.png'
-
+import CssIcon from "./assets/cssIcon.png";
+import Html5Icon from "./assets/html5Icon.png";
+import JavascriptIcon from "./assets/javascriptIcon.png";
+import ReactIcon from "./assets/reactIcon.png";
 
 function App() {
   return (
@@ -188,7 +187,7 @@ function App() {
                 src={JavascriptIcon}
                 style={{
                   width: "80px",
-                  height: "75px"
+                  height: "75px",
                 }}
                 alt="Javascript Icon"
               ></img>
@@ -196,7 +195,7 @@ function App() {
                 src={ReactIcon}
                 style={{
                   width: "90px",
-                  height: "75px"
+                  height: "75px",
                 }}
                 alt="React Icon"
               ></img>
@@ -206,7 +205,7 @@ function App() {
                   width: "120px",
                   height: "100px",
                   position: "relative",
-                  bottom: "15px"
+                  bottom: "15px",
                 }}
                 alt="Html Icon"
               ></img>
@@ -216,18 +215,56 @@ function App() {
                   width: "90px",
                   height: "90px",
                   position: "relative",
-                  bottom: "13px"
+                  bottom: "13px",
                 }}
                 alt="Css Icon"
               ></img>
             </div>
             <div class="content">
+              <div>
                 <p>
-                  Dustin
+                  As a proficient front-end developer, my expertise in HTML,
+                  CSS, and JavaScript allows me to create user-friendly web
+                  pages focusing on structure, colours, fonts, and style. I
+                  skillfully implement JavaScript to enhance interactivity and
+                  functionality, providing engaging and dynamic websites for
+                  users.
                 </p>
+                <p>
+                  My experience in React Development enables me to create
+                  efficient and interactive user interfaces using the React
+                  JavaScript library. This knowledge empowers me to build
+                  scalable and maintainable web applications, prioritizing
+                  performance and user experience for seamless navigation.
+                </p>
+                <p>
+                  In the ever-evolving landscape of technology, I am adept at
+                  designing and optimizing websites and applications for various
+                  devices. My skills in Responsive Design and Mobile-based
+                  Features ensure a seamless user experience across desktop,
+                  tablet, and mobile platforms, catering to diverse user needs.
+                </p>
+                <p>
+                  As a collaborative and communicative professional, I work
+                  effectively with back-end developers, web designers, and
+                  graphic designers to create cohesive and user-centric final
+                  products. My problem-solving abilities allow me to overcome
+                  obstacles related to code, functionality, and appearance,
+                  while my customer-focused approach helps me meet client
+                  expectations and requirements by developing tailored website
+                  designs.
+                </p>
+              </div>
             </div>
           </div>
         </div>
+        {/* --------------- End of Skills Card ----------------- */}
+
+        {/* --------------- Experience Card -------------------- */}
+        <div class="card mt-4">
+          <div class="card-body">This is some text within a card body.</div>
+        </div>
+        {/* ----------------End of Experience Card 1--------------- */}
       </div>
     </div>
   );
