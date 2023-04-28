@@ -7,7 +7,7 @@ import Navbar from "react-bootstrap/Navbar";
 import EmailHome from "./assets/emailHome.png";
 import GithubHome from "./assets/githubHome.png";
 import LinkedInHome from "./assets/linkedInHome.png";
-import ResumeHome from './assets/resumeHome.png'
+import ResumeHome from "./assets/resumeHome.png";
 import ArrowDownHome from "./assets/arrowDownHome.png";
 import AboutMeIcon from "./assets/aboutMeIcon.png";
 import CssIcon from "./assets/cssIcon.png";
@@ -16,6 +16,9 @@ import JavascriptIcon from "./assets/javascriptIcon.png";
 import ReactIcon from "./assets/reactIcon.png";
 import PremergencyIcon from "./assets/premergencyInc.svg";
 import PremergencyDemo from "./assets/video/CP-CME-Demo.mp4";
+import android1 from "./assets/Android1.png";
+import android2 from "./assets/Android2.png";
+import android3 from "./assets/Android3.png";
 
 function App() {
   return (
@@ -50,8 +53,8 @@ function App() {
                     y2="0.818"
                     gradientUnits="objectBoundingBox"
                   >
-                    <stop offset="0" stop-color="#565fad" />
-                    <stop offset="1" stop-color="#2b3057" />
+                    <stop offset="0" stopColor="#565fad" />
+                    <stop offset="1" stopColor="#2b3057" />
                   </linearGradient>
                 </defs>
                 <g
@@ -104,7 +107,7 @@ function App() {
                     width: "55px",
                     height: "30px",
                   }}
-                  alt="Email Icon"
+                  alt="Resume Icon"
                 ></img>
               </div>
 
@@ -323,12 +326,14 @@ function App() {
                 </p>
               </div>
               <h2 class="row justify-content-center">Demo Below</h2>
-              <video
-                src={PremergencyDemo}
-                width="420"
-                height="540"
-                controls
-              ></video>
+              <div class="row justify-content-center">
+                <video
+                  src={PremergencyDemo}
+                  width="420"
+                  height="540"
+                  controls
+                ></video>
+              </div>
             </div>
           </div>
         </div>
@@ -344,6 +349,94 @@ function App() {
               Canadian Sales Calculator <br />
               React App on Google Play Store
             </h3>
+            <div className="content">
+              <p>
+                As part of my commitment to creating user-centric applications,
+                I developed the Canadian Sales Calculator, an innovative mobile
+                app designed to help consumers effectively manage their spending
+                by calculating sales tax on their cart of items in real time.
+                The app was born out of the observation that many people
+                struggle to stick to their budget, often exceeding their limits
+                at the checkout counter. By providing an easy-to-use interface
+                and real-time calculations, the Canadian Sales Calculator helps
+                users stay within their budget means while shopping at grocery
+                stores, convenience stores, and other retail establishments.
+              </p>
+              <p>
+                The Canadian Sales Calculator app not only calculates GST and
+                HST tax rates for all provinces but also allows users to set a
+                custom spending limit, sending a notification if they go over
+                it. In addition, the app can accommodate tax-exempt items, such
+                as dairy products, by removing the tax on individual items and
+                providing an updated total spending amount. This flexibility
+                enables users to maintain control over their spending and avoid
+                unnecessary purchases, ultimately promoting responsible
+                financial management.
+              </p>
+              <p>
+                As a developer, I am always looking for ways to improve my
+                applications and deliver better user experiences. To that end, I
+                am actively seeking feedback on the Canadian Sales Calculator
+                app to identify areas of improvement and potential new features.
+                With user input, I aim to continuously refine the app to better
+                serve the needs of consumers in managing their finances
+                effectively. Furthermore, the app's current success on the
+                Google Play Store highlights my dedication to creating
+                practical, user-friendly solutions that make a real difference
+                in people's lives.
+              </p>
+            </div>
+            <div class="justify-content-center row">
+              <img
+                src={android1}
+                style={{
+                  height: "400px",
+                  width: "180px",
+                }}
+                alt="Calculator"
+              ></img>
+              <img
+                src={android2}
+                style={{
+                  height: "400px",
+                  width: "180px",
+                }}
+                alt="Calculator2"
+              ></img>
+              <img
+                src={android3}
+                style={{
+                  height: "400px",
+                  width: "180px",
+                }}
+                alt="Calculator3"
+              ></img>
+            </div>
+          </div>
+        </div>
+        {/* ------------- Contact Card --------------- */}
+        <div class="card mt-4">
+          <div class="card-body">
+            <h1 class="justify-content-center row" style={{ color: "#4F58A0" }}>
+              Contact
+            </h1>
+
+            <div class="mt-3 p-5">
+              <h3 class="p-2">
+                LinkedIn:{" "}
+                <a href="https://www.linkedin.com/in/dustin-mayer/">
+                  Dustin Mayer
+                </a>{" "}
+              </h3>
+              <h3 class="p-2">
+                Email:{" "}
+                <a href="mailto:dmayer0615@gmail.com">dmayer0615@gmail.com</a>
+              </h3>
+              <h3 class="p-2">
+                Github Username:{" "}
+                <a href="https://github.com/maye0085">maye0085</a>
+              </h3>
+            </div>
           </div>
         </div>
       </div>
