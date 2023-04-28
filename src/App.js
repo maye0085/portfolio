@@ -7,6 +7,7 @@ import Navbar from "react-bootstrap/Navbar";
 import EmailHome from "./assets/emailHome.png";
 import GithubHome from "./assets/githubHome.png";
 import LinkedInHome from "./assets/linkedInHome.png";
+import ResumeHome from './assets/resumeHome.png'
 import ArrowDownHome from "./assets/arrowDownHome.png";
 import AboutMeIcon from "./assets/aboutMeIcon.png";
 import CssIcon from "./assets/cssIcon.png";
@@ -93,6 +94,14 @@ function App() {
                   src={EmailHome}
                   style={{
                     width: "60px",
+                    height: "30px",
+                  }}
+                  alt="Email Icon"
+                ></img>
+                <img
+                  src={ResumeHome}
+                  style={{
+                    width: "55px",
                     height: "30px",
                   }}
                   alt="Email Icon"
@@ -188,7 +197,7 @@ function App() {
               <img
                 src={JavascriptIcon}
                 style={{
-                  width: "80px",
+                  width: "95px",
                   height: "75px",
                 }}
                 alt="Javascript Icon"
@@ -217,7 +226,7 @@ function App() {
                   width: "90px",
                   height: "90px",
                   position: "relative",
-                  bottom: "13px",
+                  bottom: "16px",
                 }}
                 alt="Css Icon"
               ></img>
@@ -269,8 +278,7 @@ function App() {
               Experience
             </h1>
             <h3 class="text-center justify-content-center row">
-            Community Paramedic <br/> Cross 
-Platform App at Premergeny Inc
+              Community Paramedic <br /> Cross Platform App at Premergeny Inc
             </h3>
             <div class="row justify-content-center my-3">
               <img
@@ -329,12 +337,12 @@ Platform App at Premergeny Inc
         {/* -------------- Experience Card 2 --------------------- */}
         <div class="card mt-4">
           <div class="card-body">
-          <h1 class="justify-content-center row" style={{ color: "#4F58A0" }}>
+            <h1 class="justify-content-center row" style={{ color: "#4F58A0" }}>
               Experience
             </h1>
             <h3 class="text-center justify-content-center row">
-            Canadian Sales Calculator <br/>
-React App on Google Play Store
+              Canadian Sales Calculator <br />
+              React App on Google Play Store
             </h3>
           </div>
         </div>
