@@ -24,20 +24,29 @@ function App() {
   return (
     <div className="webBackground">
       <div className=" p-4">
-        <div class="card rounded-3">
-          {/* --------------------  Nav ----------------------- */}
+          <div class="fixed-top mx-4">
+
           <Navbar bg="light" expand="lg">
             <Container>
               <h2 class="dustinHeader font-family-Didot">Dustin</h2>
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
               <Navbar.Collapse id="basic-navbar-nav">
-                <Nav className="me-auto justify-content-end">
+                <Nav className="me-auto sticky-top justify-content-end">
                   <Nav.Link href="#home">Home</Nav.Link>
-                  <Nav.Link href="#link">About</Nav.Link>
+                  <Nav.Link href="#link">About Me</Nav.Link>
+                  <Nav.Link href="#link">Skills</Nav.Link>
+                  <Nav.Link href="#link">Experience</Nav.Link>
+                  <Nav.Link href="#link">Contact</Nav.Link>
+
+
+
                 </Nav>
               </Navbar.Collapse>
             </Container>
           </Navbar>
+          </div>
+        <div class="card rounded-3">
+          {/* --------------------  Nav ----------------------- */}
 
           {/* -----------------End of Nav --------------------- */}
 
@@ -422,20 +431,20 @@ function App() {
             </h1>
 
             <div class="mt-3 p-5">
-              <h3 class="p-2">
+              <h4 class="p-1">
                 LinkedIn:{" "}
                 <a href="https://www.linkedin.com/in/dustin-mayer/">
                   Dustin Mayer
                 </a>{" "}
-              </h3>
-              <h3 class="p-2">
+              </h4>
+              <h4 class="p-1">
                 Email:{" "}
                 <a href="mailto:dmayer0615@gmail.com">dmayer0615@gmail.com</a>
-              </h3>
-              <h3 class="p-2">
+              </h4>
+              <h4 class="p-1">
                 Github Username:{" "}
                 <a href="https://github.com/maye0085">maye0085</a>
-              </h3>
+              </h4>
             </div>
           </div>
         </div>
