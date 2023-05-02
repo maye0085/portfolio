@@ -18,8 +18,14 @@
 }
 
 .descHome {
-width: auto;  
+
   margin-left: 10%;
+}
+
+.testT{
+  width: 100%;
+  padding-right: 8.7% ;
+
 }
 
 .dustinHeader {
@@ -108,13 +114,19 @@ width: auto;
     padding-top: 10px;
     font-family: Didot;
     color: black;
-    /* font-size: 24px; */
-    margin: 0;
-    margin-right: 20%;
+    font-size: 24px; 
     margin-left: 10px;
+   
+    margin: 0px;
+    margin-right: 20%;
+    margin-left: 0px; 
   }
 
+  .testT{
+    width: 100%;
+    padding-right: 11.5% ;
 
+  }
 
 
 
@@ -129,7 +141,7 @@ width: auto;
   }
 
   .contactButton {
-    margin-left: 20%;
+    margin-left: 10%;
   }
 }
 
