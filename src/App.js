@@ -24,27 +24,21 @@ function App() {
   return (
     <div className="webBackground">
       <div className=" p-4">
-          <div class="fixed-top mx-4">
-
-          <Navbar bg="light" expand="lg">
-            <Container>
-              <h2 class="dustinHeader font-family-Didot">Dustin</h2>
-              <Navbar.Toggle aria-controls="basic-navbar-nav" />
-              <Navbar.Collapse id="basic-navbar-nav">
-                <Nav className="me-auto sticky-top justify-content-end">
-                  <Nav.Link href="#home">Home</Nav.Link>
-                  <Nav.Link href="#link">About Me</Nav.Link>
-                  <Nav.Link href="#link">Skills</Nav.Link>
-                  <Nav.Link href="#link">Experience</Nav.Link>
-                  <Nav.Link href="#link">Contact</Nav.Link>
-
-
-
-                </Nav>
-              </Navbar.Collapse>
-            </Container>
+        <div class="fixed-top mx-4  mt-2 ">
+          <Navbar bg="light" expand="sm">
+            <h2 class="dustinHeader font-family-Didot ">Dustin</h2>
+            <Navbar.Toggle aria-controls="basic-navbar-nav " />
+            <Navbar.Collapse id="basic-navbar-nav dustinHeader  ">
+              <Nav className=" sticky-top  ">
+                <Nav.Link href="#home">Home</Nav.Link>
+                <Nav.Link href="#link">About Me</Nav.Link>
+                <Nav.Link href="#link">Skills</Nav.Link>
+                <Nav.Link href="#link">Experience</Nav.Link>
+                <Nav.Link href="#link">Contact</Nav.Link>
+              </Nav>
+            </Navbar.Collapse>
           </Navbar>
-          </div>
+        </div>
         <div class="card rounded-3">
           {/* --------------------  Nav ----------------------- */}
 
@@ -85,7 +79,7 @@ function App() {
               </svg>
 
               {/* Content here */}
-              <div class="row justify-content-around mt-4">
+              <div class="row justify-content-around mt-4  iconRow ">
                 <img
                   src={GithubHome}
                   style={{
@@ -121,19 +115,21 @@ function App() {
               </div>
 
               {/* Content here */}
-              <div class="mt-4">
-                <h1 class="row justify-content-center fw-bold">
+              <div class="">
+                <h1 class="row justify-content-center fw-bold mt-4">
                   Hello, Im Dustin Mayer
                 </h1>
                 <h2 class="row justify-content-center fw-bold">
                   Front-end Developer
                 </h2>
-                <h4 class="row justify-content-center mt-2 mx-4">
-                  “Front-End Pro: Delivering User-Centric, Responsive Designs
-                  with HTML, CSS, JavaScript, and Top Frameworks.”
-                </h4>
+                <div class="descHome">
+                  <h4 class="">
+                    “Front-End Pro: Delivering User-Centric, Responsive Designs
+                    with HTML, CSS, JavaScript, and Top Frameworks.”
+                  </h4>
+                </div>
               </div>
-              <div>
+              <div class="contactButton">
                 <button class="button-29">Contact Me</button>
               </div>
             </div>

@@ -1,18 +1,33 @@
+/* Extra small devices (portrait phones, less than 576px) */
+/* No media query since this is the default in Bootstrap */
 
-.webBackground{
-  background: rgb(83,45,253);
-  background: linear-gradient(0deg, rgba(83,45,253,1) 6%, rgba(14,173,223,1) 93%);
+.descHome {
+  width: 420px;
+  display: flex;
+  margin-left: 8%;
+}
+
+.webBackground {
+  background: rgb(54,16,227);
+  background: linear-gradient(0deg, rgba(54,16,227,1) 1%, rgba(14,173,223,1) 93%);
   height: 100%;
 }
 
-.introCard{
+.introCard {
   border-radius: 25% !important;
 }
 
-.dustinHeader{
+.descHome {
+width: auto;  
+  margin-left: 10%;
+}
+
+.dustinHeader {
   padding-top: 10px;
   font-family: Didot;
   color: black;
+  margin-left: 10px;
+
   /* font-size: 24px; */
 }
 
@@ -25,7 +40,6 @@
   /* height: 500px; */
 }
 
-
 .button-29 {
   align-items: center;
   top: 18px;
@@ -33,15 +47,20 @@
   width: 140px;
   height: 200px;
   appearance: none;
-  background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+  background-image: radial-gradient(
+    100% 100% at 100% 0,
+    #5adaff 0,
+    #5468ff 100%
+  );
   border: 0;
   border-radius: 20px;
-  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgba(58, 65, 111, 0.5) 0 -3px 0 inset;
   box-sizing: border-box;
   color: white;
   cursor: pointer;
   display: inline-flex;
-  font-family: "Didot",monospace;
+  font-family: "Didot", monospace;
   font-weight: 900;
   height: 48px;
   justify-content: center;
@@ -53,25 +72,79 @@
   position: relative;
   text-align: left;
   text-decoration: none;
-  transition: box-shadow .15s,transform .15s;
+  transition: box-shadow 0.15s, transform 0.15s;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
   white-space: nowrap;
-  will-change: box-shadow,transform;
+  will-change: box-shadow, transform;
   font-size: 18px;
 }
 
 .button-29:focus {
-  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
 }
 
 .button-29:hover {
-  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
   transform: translateY(-2px);
 }
 
 .button-29:active {
   box-shadow: #3c4fe0 0 3px 7px inset;
   transform: translateY(2px);
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .webBackground {
+    background: rgb(201, 46, 106);
+    height: 100%;
+  }
+
+  .dustinHeader {
+    padding-top: 10px;
+    font-family: Didot;
+    color: black;
+    /* font-size: 24px; */
+    margin: 0;
+    margin-right: 20%;
+    margin-left: 10px;
+  }
+
+
+
+
+
+  .iconRow {
+    width: 500px !important;
+  }
+
+  .descHome {
+    width: 440px;
+    display: flex;
+    margin-left: 16%;
+  }
+
+  .contactButton {
+    margin-left: 20%;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .webBackground {
+    background: rgb(101, 214, 30);
+    height: 100%;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
 }
