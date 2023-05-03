@@ -23,14 +23,14 @@ import android3 from "./assets/Android3.png";
 function App() {
   return (
     <div className="webBackground">
-      <div className=" p-4">
-        <div class="fixed-top mx-4  mt-2 row ">
-          <Navbar bg="light" expand="sm">
-            <Container>
+      <div className=" p-4 ">
+        <div class="fixed-top mx-4  mt-2 row navBarStyle  ">
+          <Navbar  bg="light" expand="sm">
+            <Container class="navBarStyle" >
               <h2 class="dustinHeader font-family-Didot ">Dustin</h2>
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
-              <Navbar.Collapse id="basic-navbar-nav ">
-                <Nav className=" sticky-top  ">
+              <Navbar.Collapse   id="basic-navbar-nav ">
+                <Nav class="navBarStyle" className=" sticky-top  ">
                   <div class="hoverClass">
                     <Nav.Link href="#link">Home</Nav.Link>
                     <img class="floatingIcon" alt="test" src={GithubHome} />
