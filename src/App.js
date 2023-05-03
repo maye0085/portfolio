@@ -32,13 +32,25 @@ function App() {
               <Navbar.Collapse id="basic-navbar-nav ">
                 <Nav className=" sticky-top  ">
                   <div class="hoverClass">
-                  <Nav.Link href="#link">Home</Nav.Link>
-                    <img class="floatingIcon" src={GithubHome} />
+                    <Nav.Link href="#link">Home</Nav.Link>
+                    <img class="floatingIcon" alt="test" src={GithubHome} />
                   </div>
-                  <Nav.Link href="#link">About Me</Nav.Link>
-                  <Nav.Link href="#link">Skills</Nav.Link>
-                  <Nav.Link href="#link">Experience</Nav.Link>
-                  <Nav.Link href="#link">Contact</Nav.Link>
+                  <div class="hoverClass">
+                    <Nav.Link href="#link">About</Nav.Link>
+                    <img class="floatingIcon" alt="test" src={GithubHome} />
+                  </div>
+                  <div class="hoverClass">
+                    <Nav.Link href="#link">Skills</Nav.Link>
+                    <img class="floatingIcon" alt="test" src={GithubHome} />
+                  </div>
+                  <div class="hoverClass">
+                    <Nav.Link href="#link">Experience</Nav.Link>
+                    <img class="floatingIcon" alt="test" src={GithubHome} />
+                  </div>
+                  <div class="hoverClass">
+                    <Nav.Link href="#link">Contact</Nav.Link>
+                    <img class="floatingIcon" alt="test" src={GithubHome} />
+                  </div>
                 </Nav>
               </Navbar.Collapse>
             </Container>
