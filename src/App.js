@@ -24,14 +24,17 @@ function App() {
   return (
     <div className="webBackground">
       <div className=" p-4">
-        <div class="fixed-top mx-4  mt-2 row justify-content-around">
+        <div class="fixed-top mx-4  mt-2 row ">
           <Navbar bg="light" expand="sm">
-            <Container >
+            <Container>
               <h2 class="dustinHeader font-family-Didot ">Dustin</h2>
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
-              <Navbar.Collapse id="basic-navbar-nav   ">
+              <Navbar.Collapse id="basic-navbar-nav ">
                 <Nav className=" sticky-top  ">
-                  <Nav.Link href="#home">Home</Nav.Link>
+                  <div class="hoverClass">
+                  <Nav.Link href="#link">Home</Nav.Link>
+                    <img class="floatingIcon" src={GithubHome} />
+                  </div>
                   <Nav.Link href="#link">About Me</Nav.Link>
                   <Nav.Link href="#link">Skills</Nav.Link>
                   <Nav.Link href="#link">Experience</Nav.Link>
@@ -125,22 +128,15 @@ function App() {
                   Front-end Developer
                 </h2>
                 <div class="mt-4 descHome">
-                <h4 class="row justify-content-center mt-2 mx-4">
-                  “Front-End Pro: Delivering User-Centric, Responsive Designs
-                  with HTML, CSS, JavaScript, and Top Frameworks.”
-                </h4>
+                  <h4 class="row justify-content-center mt-2 mx-4">
+                    “Front-End Pro: Delivering User-Centric, Responsive Designs
+                    with HTML, CSS, JavaScript, and Top Frameworks.”
+                  </h4>
                 </div>
                 <div class="contactButton">
-
-                <button class="button-29">Contact Me</button>
+                  <button class="button-29">Contact Me</button>
                 </div>
-                
-          
-                 
-
-                 
               </div>
-             
             </div>
             <div class="row justify-content-center">
               <img
@@ -148,7 +144,7 @@ function App() {
                 style={{
                   width: "60px",
                   height: "40px",
-                  marginTop: "60px",
+                  marginTop: "50px",
                 }}
                 alt="Continue Down Icon"
               ></img>

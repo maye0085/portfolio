@@ -8,8 +8,12 @@
 }
 
 .webBackground {
-  background: rgb(54,16,227);
-  background: linear-gradient(0deg, rgba(54,16,227,1) 1%, rgba(14,173,223,1) 93%);
+  background: rgb(54, 16, 227);
+  background: linear-gradient(
+    0deg,
+    rgba(54, 16, 227, 1) 1%,
+    rgba(14, 173, 223, 1) 93%
+  );
   height: 100%;
 }
 
@@ -18,14 +22,12 @@
 }
 
 .descHome {
-
   margin-left: 10%;
 }
 
-.testT{
+.testT {
   width: 100%;
-  padding-right: 8.7% ;
-
+  padding-right: 8.7%;
 }
 
 .dustinHeader {
@@ -114,20 +116,36 @@
     padding-top: 10px;
     font-family: Didot;
     color: black;
-    font-size: 24px; 
+    font-size: 24px;
     margin-left: 10px;
-   
+
     margin: 0px;
     margin-right: 20%;
-    margin-left: 0px; 
+    margin-left: 0px;
   }
 
-  .testT{
+  .testT {
     width: 100%;
-    padding-right: 11.5% ;
-
+    padding-right: 11.5%;
   }
 
+  .hoverClass{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .hoverClass img{
+    visibility:hidden;
+  }
+  .hoverClass:hover img {
+   visibility:visible;
+  }
+
+  .floatingIcon{
+    width: 18 px;
+    height: 18px;
+    margin-top: 11px;
+  }
 
 
   .iconRow {
