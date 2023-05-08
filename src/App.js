@@ -1,9 +1,7 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import React from "react";
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
+import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import EmailHome from "./assets/emailHome.png";
 import GithubHome from "./assets/githubHome.png";
 import LinkedInHome from "./assets/linkedInHome.png";
@@ -23,46 +21,37 @@ import android3 from "./assets/Android3.png";
 function App() {
   return (
     <div className="webBackground">
-      <div className=" p-4 ">
-        <div class="fixed-top mx-4  mt-2 row navBarStyle  ">
-          <Navbar  bg="light" expand="sm">
-            <Container class="navBarStyle" >
-              <h2 class="dustinHeader font-family-Didot ">Dustin</h2>
-              <Navbar.Toggle aria-controls="basic-navbar-nav" />
-              <Navbar.Collapse   id="basic-navbar-nav ">
-                <Nav class="navBarStyle" className=" sticky-top  ">
-                  <div class="hoverClass">
-                    <Nav.Link href="#link">Home</Nav.Link>
-                    <img class="floatingIcon" alt="test" src={GithubHome} />
-                  </div>
-                  <div class="hoverClass">
-                    <Nav.Link href="#link">About</Nav.Link>
-                    <img class="floatingIcon" alt="test" src={GithubHome} />
-                  </div>
-                  <div class="hoverClass">
-                    <Nav.Link href="#link">Skills</Nav.Link>
-                    <img class="floatingIcon" alt="test" src={GithubHome} />
-                  </div>
-                  <div class="hoverClass">
-                    <Nav.Link href="#link">Experience</Nav.Link>
-                    <img class="floatingIcon" alt="test" src={GithubHome} />
-                  </div>
-                  <div class="hoverClass">
-                    <Nav.Link href="#link">Contact</Nav.Link>
-                    <img class="floatingIcon" alt="test" src={GithubHome} />
-                  </div>
-                </Nav>
-              </Navbar.Collapse>
-            </Container>
-          </Navbar>
-        </div>
-        <div class="card rounded-3">
-          {/* --------------------  Nav ----------------------- */}
 
+      {/* --------------------  Nav ----------------------- */}
+      <div class="navBarHome">
+
+      <Navbar  bg="light" expand="md">
+      <Navbar.Brand href="#" class="dustinHeader" >Dustin</Navbar.Brand>
+      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Collapse id="basic-navbar-nav">
+        <Nav className="mr-auto">
+          <Nav.Link href="#">Home</Nav.Link>
+          <Nav.Link href="#">About</Nav.Link>
+          <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+            <NavDropdown.Item href="#">Action</NavDropdown.Item>
+            <NavDropdown.Item href="#">Another action</NavDropdown.Item>
+            <NavDropdown.Divider />
+            <NavDropdown.Item href="#">Separated link</NavDropdown.Item>
+          </NavDropdown>
+        </Nav>
+      </Navbar.Collapse>
+    </Navbar>
+      </div>
           {/* -----------------End of Nav --------------------- */}
 
-          <div class="card-body cardHome">
-            <div class="row justify-content-center">
+
+
+        <div className="">
+        <div class="card rounded-3  ">
+    
+
+          <div class="card-body cardHome  ">
+            <div class="row justify-content-center ">
               <svg width="300" height="300" viewBox="0 0 253.295 272.608">
                 <defs>
                   <linearGradient
@@ -129,37 +118,39 @@ function App() {
                   }}
                   alt="Resume Icon"
                 ></img>
+                
               </div>
 
               {/* Content here */}
-              <div class="mt-4">
+
+              <div class="mt-4 row justify-content-center ">
                 <h1 class="row justify-content-center fw-bold">
                   Hello, Im Dustin Mayer
                 </h1>
-                <h2 class="row justify-content-center fw-bold">
+                <h2 class=" row justify-content-center fw-bold">
                   Front-end Developer
                 </h2>
-                <div class="mt-4 descHome">
-                  <h4 class="row justify-content-center mt-2 mx-4">
+                  <h4 class=" descHome ">
                     “Front-End Pro: Delivering User-Centric, Responsive Designs
                     with HTML, CSS, JavaScript, and Top Frameworks.”
                   </h4>
-                </div>
-                <div class="contactButton">
+                <div class="">
                   <button class="button-29">Contact Me</button>
                 </div>
-              </div>
-            </div>
-            <div class="row justify-content-center">
+                
+            <div class="arrowDown mt-3  ">
               <img
                 src={ArrowDownHome}
                 style={{
-                  width: "60px",
-                  height: "40px",
-                  marginTop: "50px",
+                  width: "30px",
+                  height: "30px",
+                  
+    
                 }}
                 alt="Continue Down Icon"
               ></img>
+            </div>
+              </div>
             </div>
           </div>
           {/* ------------------------ Emd of card body ----------------------- */}
@@ -444,20 +435,20 @@ function App() {
             </h1>
 
             <div class="mt-3 p-5">
-              <h4 class="p-1">
+              <h5 class="p-1">
                 LinkedIn:{" "}
                 <a href="https://www.linkedin.com/in/dustin-mayer/">
                   Dustin Mayer
                 </a>{" "}
-              </h4>
-              <h4 class="p-1">
+              </h5>
+              <h5 class="p-1">
                 Email:{" "}
                 <a href="mailto:dmayer0615@gmail.com">dmayer0615@gmail.com</a>
-              </h4>
-              <h4 class="p-1">
+              </h5>
+              <h5 class="p-1">
                 Github Username:{" "}
                 <a href="https://github.com/maye0085">maye0085</a>
-              </h4>
+              </h5>
             </div>
           </div>
         </div>

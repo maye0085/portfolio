@@ -1,11 +1,11 @@
 /* Extra small devices (portrait phones, less than 576px) */
 /* No media query since this is the default in Bootstrap */
 
-.descHome {
+/* .descHome {
   width: 420px;
   display: flex;
-  margin-left: 8%;
-}
+  justify-content: center;
+} */
 
 .webBackground {
   background: rgb(54, 16, 227);
@@ -17,6 +17,19 @@
   height: 100%;
 }
 
+.card{
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.arrowDown {
+  width: 60px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
 .introCard {
   border-radius: 25% !important;
 }
@@ -25,19 +38,19 @@
   margin-left: 10%;
 }
 
-.hoverClass{
+.hoverClass {
   display: flex;
   flex-direction: row;
 }
 
-.hoverClass img{
-  visibility:hidden;
+.hoverClass img {
+  visibility: hidden;
 }
 .hoverClass:hover img {
- visibility:visible;
+  visibility: visible;
 }
 
-.floatingIcon{
+.floatingIcon {
   width: 20px;
   height: 20px;
   margin-top: 4px;
@@ -60,19 +73,26 @@
 }
 
 .cardHome {
-  height: 770px;
   margin-top: 60px;
+}
+
+.navbar .nav {
+  border: none;
 }
 
 .cardAbout {
   /* height: 500px; */
 }
 
-.navBarStyle{
-  width: auto;
-  display: flex;
-  justify-content: space-between;
+.navBarHome{
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 10px;
 }
+
+
+
+
 
 .button-29 {
   align-items: center;
@@ -133,10 +153,10 @@
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-  .webBackground {
+  /* .webBackground {
     background: rgb(201, 46, 106);
     height: 100%;
-  }
+  } */
 
   .dustinHeader {
     padding-top: 10px;
@@ -147,7 +167,6 @@
     position: relative;
     right: 5%x;
     margin-right: 10%;
-   
   }
 
   .testT {
@@ -155,27 +174,26 @@
     padding-right: 11.5%;
   }
 
-  .hoverClass{
+  .hoverClass {
     display: flex;
     flex-direction: row;
   }
 
-  .hoverClass img{
-    visibility:hidden;
+  .hoverClass img {
+    visibility: hidden;
   }
   .hoverClass:hover img {
-   visibility:visible;
+    visibility: visible;
   }
 
-  .floatingIcon{
+  .floatingIcon {
     width: 15px;
     height: 15px;
-   position: relative;
-   top: 2px;
-   left: 2px;
-   margin-right: 8px
+    position: relative;
+    top: 2px;
+    left: 2px;
+    margin-right: 8px;
   }
-
 
   .iconRow {
     width: 500px !important;
@@ -185,18 +203,14 @@
     width: 440px;
     display: flex;
     margin-left: 16%;
+    margin-right: 10%;
   }
 
   .contactButton {
-    margin-left: 10%;
+    padding-bottom: 20px;
   }
 
-  .navBarStyle{
-    width: auto;
-    position: relative;
-    right: -8%
-    
-  }
+
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -205,6 +219,24 @@
     background: rgb(101, 214, 30);
     height: 100%;
   }
+
+  .dustinHeader {
+    padding-top: 10px;
+    font-family: Didot;
+    color: black;
+    font-size: 24px;
+    margin-left: 20px;
+    position: relative;
+    right: 10%x;
+    margin-right: 10%;
+    justify-content: space-between;
+  }
+
+  /* .descHome {
+    width: 420px;
+    display: flex;
+    justify-content: center;
+  } */
 }
 
 /* Large devices (desktops, 992px and up) */
