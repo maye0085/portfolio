@@ -8,12 +8,9 @@
 } */
 
 .webBackground {
-  background: rgb(54, 16, 227);
-  background: linear-gradient(
-    0deg,
-    rgba(54, 16, 227, 1) 1%,
-    rgba(14, 173, 223, 1) 93%
-  );
+
+  background: rgb(150,66,191);
+  background: linear-gradient(0deg, rgba(150,66,191,1) 2%, rgba(14,173,223,1) 61%);
   height: 100%;
   padding-bottom: 15px;
 }
@@ -222,10 +219,7 @@
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  .webBackground {
-    background: rgb(101, 214, 30);
-    height: 100%;
-  }
+
 
   .dustinHeader {
     padding-top: 10px;
@@ -267,4 +261,35 @@
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+  .contactButton {
+    position: relative;
+    left: 20%;
+  }
+  
+  .card{
+    margin-right: 10%;
+    margin-left: 10%;
+  }
+
+  .card-body p{
+    width: auto;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+
+  .card-body h5{
+    width: auto;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+
+  .navBarHome {
+    margin-left: 10%;
+    margin-right: 10%;
+    /* padding-left: 4.85%;
+    padding-right: 5%; */
+    position: relative;
+    top: 20px;
+    z-index: 1;
+  }
 }
