@@ -1,7 +1,7 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import React from "react";
-import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
+import { Navbar, Nav, Container } from "react-bootstrap";
 import EmailHome from "./assets/emailHome.png";
 import GithubHome from "./assets/githubHome.png";
 import LinkedInHome from "./assets/linkedInHome.png";
@@ -21,37 +21,30 @@ import android3 from "./assets/Android3.png";
 function App() {
   return (
     <div className="webBackground">
-
       {/* --------------------  Nav ----------------------- */}
-      <div class="navBarHome">
-
-      <Navbar  bg="light" expand="md">
-      <Navbar.Brand href="#" class="dustinHeader" >Dustin</Navbar.Brand>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="mr-auto">
-          <Nav.Link href="#">Home</Nav.Link>
-          <Nav.Link href="#">About</Nav.Link>
-          <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-            <NavDropdown.Item href="#">Action</NavDropdown.Item>
-            <NavDropdown.Item href="#">Another action</NavDropdown.Item>
-            <NavDropdown.Divider />
-            <NavDropdown.Item href="#">Separated link</NavDropdown.Item>
-          </NavDropdown>
-        </Nav>
-      </Navbar.Collapse>
-    </Navbar>
+      <div className="navBarHome">
+        <Navbar bg="white" expand="lg">
+          <Container fluid>
+            <Navbar.Brand className="dustinHeader" href="#">Dustin</Navbar.Brand>
+            <Navbar.Toggle aria-controls="" />
+            <Navbar.Collapse id="navbarScroll">
+              <Nav className="me-auto my-2 my-lg-0">
+                <Nav.Link href="#action1">Home</Nav.Link>
+                <Nav.Link href="#action2">About Me</Nav.Link>
+                <Nav.Link href="#action2">Skills</Nav.Link>
+                <Nav.Link href="#action2">Experience</Nav.Link>
+                <Nav.Link href="#action2">Contact</Nav.Link>
+              </Nav>
+            </Navbar.Collapse>
+          </Container>
+        </Navbar>
       </div>
-          {/* -----------------End of Nav --------------------- */}
+      {/* -----------------End of Nav --------------------- */}
 
-
-
-        <div className="">
-        <div class="card rounded-3  ">
-    
-
-          <div class="card-body cardHome  ">
-            <div class="row justify-content-center ">
+      <div className="">
+        <div className="card rounded-3  ">
+          <div className="card-body cardHome  ">
+            <div className="row justify-content-center ">
               <svg width="300" height="300" viewBox="0 0 253.295 272.608">
                 <defs>
                   <linearGradient
@@ -85,7 +78,7 @@ function App() {
               </svg>
 
               {/* Content here */}
-              <div class="row justify-content-around mt-4  iconRow ">
+              <div className="row justify-content-around mt-4  iconRow ">
                 <img
                   src={GithubHome}
                   style={{
@@ -118,38 +111,35 @@ function App() {
                   }}
                   alt="Resume Icon"
                 ></img>
-                
               </div>
 
               {/* Content here */}
 
-              <div class="mt-4 row justify-content-center ">
-                <h1 class="row justify-content-center fw-bold">
+              <div className="mt-4 row justify-content-center ">
+                <h1 className="row justify-content-center fw-bold">
                   Hello, Im Dustin Mayer
                 </h1>
-                <h2 class=" row justify-content-center fw-bold">
+                <h2 className=" row justify-content-center fw-bold">
                   Front-end Developer
                 </h2>
-                  <h4 class=" descHome ">
-                    “Front-End Pro: Delivering User-Centric, Responsive Designs
-                    with HTML, CSS, JavaScript, and Top Frameworks.”
-                  </h4>
-                <div class="">
-                  <button class="button-29">Contact Me</button>
+                <h4 className="descHome">
+                  “Front-End Pro: Delivering User-Centric, Responsive Designs
+                  with HTML, CSS, JavaScript, and Top Frameworks.”
+                </h4>
+                <div className="contactButton">
+                  <button className="button-29">Contact Me</button>
                 </div>
-                
-            <div class="arrowDown mt-3  ">
-              <img
-                src={ArrowDownHome}
-                style={{
-                  width: "30px",
-                  height: "30px",
-                  
-    
-                }}
-                alt="Continue Down Icon"
-              ></img>
-            </div>
+
+                <div className="arrowDown mt-3  ">
+                  <img
+                    src={ArrowDownHome}
+                    style={{
+                      width: "30px",
+                      height: "30px",
+                    }}
+                    alt="Continue Down Icon"
+                  ></img>
+                </div>
               </div>
             </div>
           </div>
@@ -157,13 +147,13 @@ function App() {
         </div>
         {/* ----------------------- About Me Card ------------------------ */}
 
-        <div class="card mt-4">
-          <div class="card-body cardAbout">
-            <h1 class="justify-content-center row" style={{ color: "#4F58A0" }}>
+        <div className="card mt-4">
+          <div className="card-body cardAbout">
+            <h1 className="justify-content-center row" style={{ color: "#4F58A0" }}>
               About Me
             </h1>
 
-            <div class="row justify-content-center  my-5">
+            <div className="row justify-content-center  my-5">
               <img
                 src={AboutMeIcon}
                 style={{
@@ -204,12 +194,12 @@ function App() {
 
         {/* --------------------- Skills Card ------------------------- */}
 
-        <div class="card mt-4">
-          <div class="card-body">
-            <h1 class="justify-content-center row" style={{ color: "#4F58A0" }}>
+        <div className="card mt-4">
+          <div className="card-body">
+            <h1 className="justify-content-center row" style={{ color: "#4F58A0" }}>
               Skills
             </h1>
-            <div class="row justify-content-center my-5">
+            <div className="row justify-content-center my-5">
               <img
                 src={JavascriptIcon}
                 style={{
@@ -247,7 +237,7 @@ function App() {
                 alt="Css Icon"
               ></img>
             </div>
-            <div class="content">
+            <div className="content">
               <div>
                 <p>
                   As a proficient front-end developer, my expertise in HTML,
@@ -288,15 +278,15 @@ function App() {
         {/* --------------- End of Skills Card ----------------- */}
 
         {/* --------------- Experience Card -------------------- */}
-        <div class="card mt-4">
-          <div class="card-body">
-            <h1 class="justify-content-center row" style={{ color: "#4F58A0" }}>
+        <div className="card mt-4">
+          <div className="card-body">
+            <h1 className="justify-content-center row" style={{ color: "#4F58A0" }}>
               Experience
             </h1>
-            <h3 class="text-center justify-content-center row">
+            <h3 className="text-center justify-content-center row">
               Community Paramedic <br /> Cross Platform App at Premergeny Inc
             </h3>
-            <div class="row justify-content-center my-3">
+            <div className="row justify-content-center my-3">
               <img
                 src={PremergencyIcon}
                 style={{
@@ -305,7 +295,7 @@ function App() {
                 alt="Premergency Inc Icon"
               ></img>
             </div>
-            <div class="content">
+            <div className="content">
               <div>
                 <p>
                   As a design team leader at Premergency Inc, I led a talented
@@ -338,8 +328,8 @@ function App() {
                   patient care and streamlined operations for Premergency Inc.
                 </p>
               </div>
-              <h2 class="row justify-content-center">Demo Below</h2>
-              <div class="row justify-content-center">
+              <h2 className="row justify-content-center">Demo Below</h2>
+              <div className="row justify-content-center">
                 <video
                   src={PremergencyDemo}
                   width="420"
@@ -353,12 +343,12 @@ function App() {
         {/* ----------------End of Experience Card 1--------------- */}
 
         {/* -------------- Experience Card 2 --------------------- */}
-        <div class="card mt-4">
-          <div class="card-body">
-            <h1 class="justify-content-center row" style={{ color: "#4F58A0" }}>
+        <div className="card mt-4">
+          <div className="card-body">
+            <h1 className="justify-content-center row" style={{ color: "#4F58A0" }}>
               Experience
             </h1>
-            <h3 class="text-center justify-content-center row">
+            <h3 className="text-center justify-content-center row">
               Canadian Sales Calculator <br />
               React App on Google Play Store
             </h3>
@@ -399,7 +389,7 @@ function App() {
                 in people's lives.
               </p>
             </div>
-            <div class="justify-content-center row">
+            <div className="justify-content-center row">
               <img
                 src={android1}
                 style={{
@@ -428,24 +418,24 @@ function App() {
           </div>
         </div>
         {/* ------------- Contact Card --------------- */}
-        <div class="card mt-4">
-          <div class="card-body">
-            <h1 class="justify-content-center row" style={{ color: "#4F58A0" }}>
+        <div className="card mt-4 ">
+          <div className="card-body">
+            <h1 className="justify-content-center row" style={{ color: "#4F58A0" }}>
               Contact
             </h1>
 
-            <div class="mt-3 p-5">
-              <h5 class="p-1">
+            <div className="mt-3 p-5">
+              <h5 className="p-1">
                 LinkedIn:{" "}
                 <a href="https://www.linkedin.com/in/dustin-mayer/">
                   Dustin Mayer
                 </a>{" "}
               </h5>
-              <h5 class="p-1">
+              <h5 className="p-1">
                 Email:{" "}
                 <a href="mailto:dmayer0615@gmail.com">dmayer0615@gmail.com</a>
               </h5>
-              <h5 class="p-1">
+              <h5 className="p-1">
                 Github Username:{" "}
                 <a href="https://github.com/maye0085">maye0085</a>
               </h5>
