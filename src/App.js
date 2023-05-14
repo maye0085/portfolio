@@ -181,11 +181,21 @@ function App() {
 
               {/* Content here */}
 
+
+
+                  <div className="topHeyHeader ">
+                    <h2 className="fw-bold">Hello Im</h2>
+                  </div>
+
+              <div className="testAnim">
+                <div className="testContent">
+                  <h4>Dustin Mayer</h4>
+                  <h4>Dustin Mayer</h4>
+                </div>
+              </div>
+
               <div className="mt-4 row justify-content-center ">
-                <h1 className="row justify-content-center fw-bold">
-                  Hello, Im Dustin Mayer
-                </h1>
-                <h2 className=" row justify-content-center fw-bold">
+                <h2 className=" row justify-content-center">
                   Front-end Developer
                 </h2>
                 <h4 className="descHome">
@@ -431,7 +441,10 @@ function App() {
             </h1>
             <h3 className="text-center justify-content-center row">
               Canadian Sales Calculator <br />
-              React App on <a href="https://play.google.com/store/apps/details?id=com.blueseedapps.canadianSalesTaxCalc">Google Play Store</a>
+              React App on{" "}
+              <a href="https://play.google.com/store/apps/details?id=com.blueseedapps.canadianSalesTaxCalc">
+                Google Play Store
+              </a>
             </h3>
             <div className="content">
               <p>
