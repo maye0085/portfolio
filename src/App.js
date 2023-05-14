@@ -173,7 +173,7 @@ function App() {
               {/* Content here */}
 
               <div className="topHeyHeader ">
-                <h2 className="fw-bold">Hello Im</h2>
+                <h2 className="fw-bold">Welcome I'm</h2>
               </div>
 
               <div className="testAnim">
