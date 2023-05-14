@@ -20,6 +20,10 @@
   padding-bottom: 15px;
 }
 
+.navbar{
+  border-radius: 20px;
+}
+
 .testAnim{
     
     margin: 0;
@@ -29,11 +33,33 @@
 
 }
 
+.backgroundAvatar{
+  z-index: 2;
+  display: inline;
+  position: relative;
+  right: 2px;
+  top: 2px
+}
+
+.avatarMe{
+  z-index: 3;
+  position: absolute;
+  top: 90px;
+  width: 68% !important
+}
+
 .topHeyHeader{
   padding-top: 20px;
   display: flex;
   justify-content: center;
   
+}
+
+.avatarImg{
+  z-index: 3;
+  position: relative;
+  display: inline;
+  bottom: 300px;
 }
 
 .testContent {
@@ -172,7 +198,14 @@
   position: relative;
   top: 20px;
   z-index: 1;
+  ;
+  
 }
+
+.navBarContainer{
+  border-radius: 10px !important;
+}
+
 
 .button-29 {
   align-items: center;
