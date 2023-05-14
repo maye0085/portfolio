@@ -8,9 +8,12 @@
 } */
 
 .webBackground {
-
-  background: rgb(150,66,191);
-  background: linear-gradient(0deg, rgba(150,66,191,1) 2%, rgba(14,173,223,1) 61%);
+  background: rgb(150, 66, 191);
+  background: linear-gradient(
+    0deg,
+    rgba(150, 66, 191, 1) 2%,
+    rgba(14, 173, 223, 1) 61%
+  );
   height: 100%;
   padding-bottom: 15px;
 }
@@ -20,7 +23,17 @@
   margin-right: 5%;
 }
 
+.myDiv {
+  display: flex;
+  flex-direction: row;
+}
 
+.myDiv img {
+  display: none;
+}
+.myDiv:hover img {
+  display: block;
+}
 
 .arrowDown {
   width: 60px;
@@ -36,18 +49,6 @@
 
 .descHome {
   margin-left: 10%;
-}
-
-.hoverClass {
-  display: flex;
-  flex-direction: row;
-}
-
-.hoverClass img {
-  visibility: hidden;
-}
-.hoverClass:hover img {
-  visibility: visible;
 }
 
 .floatingIcon {
@@ -70,6 +71,13 @@
   margin-left: 10px;
 
   /* font-size: 24px; */
+}
+
+.reactHeader{
+  padding-top: 10px;
+  font-family: Didot;
+  color: black;
+  margin-left: 10px;
 }
 
 .cardHome {
@@ -219,8 +227,6 @@
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-
-
   .dustinHeader {
     padding-top: 10px;
     font-family: Didot;
@@ -238,7 +244,7 @@
     left: 10%;
   }
 
-  .card-body p{
+  .card-body p {
     width: auto;
     margin-left: 10%;
     margin-right: 10%;
@@ -265,19 +271,19 @@
     position: relative;
     left: 20%;
   }
-  
-  .card{
+
+  .card {
     margin-right: 10%;
     margin-left: 10%;
   }
 
-  .card-body p{
+  .card-body p {
     width: auto;
     margin-left: 20%;
     margin-right: 20%;
   }
 
-  .card-body h5{
+  .card-body h5 {
     width: auto;
     margin-left: 20%;
     margin-right: 20%;

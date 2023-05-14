@@ -25,17 +25,83 @@ function App() {
       <div className="navBarHome">
         <Navbar bg="white" expand="lg">
           <Container fluid>
-            <Navbar.Brand className="dustinHeader" href="#">Dustin</Navbar.Brand>
+            <Navbar.Brand className="dustinHeader" href="#">
+              Dustin
+            </Navbar.Brand>
             <Navbar.Toggle aria-controls="" />
             <Navbar.Collapse id="navbarScroll">
               <Nav className="me-auto my-2 my-lg-0">
-                <Nav.Link href="#action1">Home</Nav.Link>
-                <Nav.Link href="#action2">About Me</Nav.Link>
-                <Nav.Link href="#action2">Skills</Nav.Link>
-                <Nav.Link href="#action2">Experience</Nav.Link>
-                <Nav.Link href="#action2">Contact</Nav.Link>
+                <div className="myDiv">
+                  <Nav.Link href="#action1">Home</Nav.Link>
+                  <img
+                    className="hideMe"
+                    src={GithubHome}
+                    style={{
+                      // marginRight: "5px",
+                      marginTop: "13px",
+                      width: "15px",
+                      height: "15px",
+                    }}
+                    alt="Github Icon"
+                  ></img>
+                </div>
+                <div className="myDiv">
+                  <Nav.Link href="#aboutMe">About Me</Nav.Link>
+                  <img
+                    src={GithubHome}
+                    style={{
+                      // marginRight: "5px",
+                      marginTop: "13px",
+                      width: "15px",
+                      height: "15px",
+                    }}
+                    alt="Github Icon"
+                  ></img>
+                </div>
+                <div className="myDiv">
+                  <Nav.Link href="#skillsCard">Skills</Nav.Link>
+                  <img
+                    src={GithubHome}
+                    style={{
+                      // marginRight: "5px",
+                      marginTop: "13px",
+                      width: "15px",
+                      height: "15px",
+                    }}
+                    alt="Github Icon"
+                  ></img>
+                </div>
+                <div className="myDiv">
+                  <Nav.Link href="#experienceCard">Experience</Nav.Link>
+                  <img
+                    src={GithubHome}
+                    style={{
+                      marginRight: "5px",
+                      marginTop: "13px",
+                      width: "15px",
+                      height: "15px",
+                    }}
+                    alt="Github Icon"
+                  ></img>
+                </div>
+                <div className="myDiv">
+                  <Nav.Link href="#contactCard">Contact</Nav.Link>
+                  <img
+                    src={GithubHome}
+                    style={{
+                      marginRight: "5px",
+                      marginTop: "13px",
+                      width: "15px",
+                      height: "15px",
+                    }}
+                    alt="Github Icon"
+                  ></img>
+                </div>
               </Nav>
             </Navbar.Collapse>
+            <div className="reactHeader d-none d-lg-block ">
+              <h4>Made in React</h4>
+            </div>
           </Container>
         </Navbar>
       </div>
@@ -127,7 +193,9 @@ function App() {
                   with HTML, CSS, JavaScript, and Top Frameworks.”
                 </h4>
                 <div className="contactButton">
-                  <button className="button-29">Contact Me</button>
+                  <a href="#contactCard">
+                    <button className="button-29">Contact Me</button>
+                  </a>
                 </div>
 
                 <div className="arrowDown mt-3  ">
@@ -147,9 +215,12 @@ function App() {
         </div>
         {/* ----------------------- About Me Card ------------------------ */}
 
-        <div className="card mt-4">
+        <div id="aboutMe" className="card mt-4">
           <div className="card-body cardAbout">
-            <h1 className="justify-content-center row" style={{ color: "#4F58A0" }}>
+            <h1
+              className="justify-content-center row"
+              style={{ color: "#4F58A0" }}
+            >
               About Me
             </h1>
 
@@ -194,9 +265,12 @@ function App() {
 
         {/* --------------------- Skills Card ------------------------- */}
 
-        <div className="card mt-4">
+        <div id="skillsCard" className="card mt-4">
           <div className="card-body">
-            <h1 className="justify-content-center row" style={{ color: "#4F58A0" }}>
+            <h1
+              className="justify-content-center row"
+              style={{ color: "#4F58A0" }}
+            >
               Skills
             </h1>
             <div className="row justify-content-center my-5">
@@ -278,14 +352,18 @@ function App() {
         {/* --------------- End of Skills Card ----------------- */}
 
         {/* --------------- Experience Card -------------------- */}
-        <div className="card mt-4">
+        <div id="experienceCard" className="card mt-4">
           <div className="card-body">
-            <h1 className="justify-content-center row" style={{ color: "#4F58A0" }}>
+            <h1
+              className="justify-content-center row"
+              style={{ color: "#4F58A0" }}
+            >
               Experience
             </h1>
             <h3 className="text-center justify-content-center row">
               Community Paramedic <br /> Cross Platform App at Premergeny Inc
             </h3>
+
             <div className="row justify-content-center my-3">
               <img
                 src={PremergencyIcon}
@@ -345,12 +423,15 @@ function App() {
         {/* -------------- Experience Card 2 --------------------- */}
         <div className="card mt-4">
           <div className="card-body">
-            <h1 className="justify-content-center row" style={{ color: "#4F58A0" }}>
+            <h1
+              className="justify-content-center row"
+              style={{ color: "#4F58A0" }}
+            >
               Experience
             </h1>
             <h3 className="text-center justify-content-center row">
               Canadian Sales Calculator <br />
-              React App on Google Play Store
+              React App on <a href="https://play.google.com/store/apps/details?id=com.blueseedapps.canadianSalesTaxCalc">Google Play Store</a>
             </h3>
             <div className="content">
               <p>
@@ -418,9 +499,12 @@ function App() {
           </div>
         </div>
         {/* ------------- Contact Card --------------- */}
-        <div className="card mt-4 ">
+        <div id="contactCard" className="card mt-4 ">
           <div className="card-body">
-            <h1 className="justify-content-center row" style={{ color: "#4F58A0" }}>
+            <h1
+              className="justify-content-center row"
+              style={{ color: "#4F58A0" }}
+            >
               Contact
             </h1>
 
@@ -429,15 +513,61 @@ function App() {
                 LinkedIn:{" "}
                 <a href="https://www.linkedin.com/in/dustin-mayer/">
                   Dustin Mayer
-                </a>{" "}
+                </a>
+                <img
+                  src={LinkedInHome}
+                  style={{
+                    marginLeft: "20px",
+                    width: "40px",
+                    height: "40px",
+                  }}
+                  alt="LinkedIn Icon"
+                ></img>
               </h5>
               <h5 className="p-1">
                 Email:{" "}
                 <a href="mailto:dmayer0615@gmail.com">dmayer0615@gmail.com</a>
+                <img
+                  src={EmailHome}
+                  style={{
+                    marginLeft: "25px",
+                    width: "40px",
+                    height: "40px",
+                  }}
+                  alt="Email Icon"
+                ></img>
               </h5>
               <h5 className="p-1">
                 Github Username:{" "}
                 <a href="https://github.com/maye0085">maye0085</a>
+                <img
+                  className="hideMe"
+                  src={GithubHome}
+                  style={{
+                    marginLeft: "20px",
+
+                    width: "40px",
+                    height: "40px",
+                  }}
+                  alt="Github Icon"
+                ></img>
+              </h5>
+              <h5 className="p-1">
+                Resume: {/* --------------- Add Resume ----------------- */}
+                <a href={GithubHome} download>
+                  Click to Download
+                </a>
+                <img
+                  className="hideMe"
+                  src={ResumeHome}
+                  style={{
+                    marginLeft: "20px",
+
+                    width: "40px",
+                    height: "40px",
+                  }}
+                  alt="Github Icon"
+                ></img>
               </h5>
             </div>
           </div>
