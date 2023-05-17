@@ -27,7 +27,7 @@ function App() {
       {/* --------------------  Nav ----------------------- */}
       <div className="navBarHome ">
         <Navbar bg="white" expand="lg">
-          <Container fluid class="navBarContainer">
+          <Container fluid className="navBarContainer">
             <Navbar.Brand className="dustinHeader" href="#">
               Dustin
             </Navbar.Brand>
@@ -404,7 +404,7 @@ function App() {
                   patient care and streamlined operations for Premergency Inc.
                 </p>
               </div>
-              <h2 className="row justify-content-center">Demo Below</h2>
+              <h2 className="row justify-content-center">Premergency Demo</h2>
               <div className="row justify-content-center">
                 <video
                   src={PremergencyDemo}
