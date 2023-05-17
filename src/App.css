@@ -20,67 +20,64 @@
   padding-bottom: 15px;
 }
 
-.navbar{
+.navbar {
   border-radius: 20px;
 }
 
-.testAnim{
-    
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-
+.homeAnimContainer {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
-.backgroundAvatar{
+.backgroundAvatar {
   z-index: 2;
   display: inline;
   position: relative;
   right: 2px;
-  top: 2px
+  top: 2px;
 }
 
-.avatarMe{
+.avatarMe {
   z-index: 3;
   position: absolute;
   top: 90px;
-  width: 68% !important
+  width: 68% !important;
 }
 
-.topHeyHeader{
+.topHeyHeader {
   padding-top: 20px;
   display: flex;
   justify-content: center;
-  
 }
 
-.avatarImg{
+.avatarImg {
   z-index: 3;
   position: relative;
   display: inline;
   bottom: 300px;
 }
 
-.testContent {
+.homeAnim {
   margin-top: 20px;
- position: relative;
-  left: 50%
+  position: relative;
+  left: 50%;
 }
 
-.testContent h4 {
+.homeAnim h4 {
   color: #fff;
   font-size: 3em;
   position: absolute;
   transform: translate(-50%, -50%);
 }
 
-.testContent h4:nth-child(1) {
+.homeAnim h4:nth-child(1) {
   color: transparent;
   -webkit-text-stroke: 2px #03a9f4;
 }
 
-.testContent h4:nth-child(2) {
+.homeAnim h4:nth-child(2) {
   color: #5f3ed9;
   animation: animate 4s ease-in-out infinite;
 }
@@ -121,15 +118,15 @@
   margin-right: 5%;
 }
 
-.myDiv {
+.divContainerIconsHome {
   display: flex;
   flex-direction: row;
 }
 
-.myDiv img {
+.divContainerIconsHome img {
   display: none;
 }
-.myDiv:hover img {
+.divContainerIconsHome:hover img {
   display: block;
 }
 
@@ -157,11 +154,6 @@
   left: 8px;
 }
 
-.testT {
-  width: 100%;
-  padding-right: 8.7%;
-}
-
 .dustinHeader {
   padding-top: 10px;
   font-family: Didot;
@@ -171,7 +163,7 @@
   /* font-size: 24px; */
 }
 
-.reactHeader{
+.reactHeader {
   padding-top: 10px;
   font-family: Didot;
   color: black;
@@ -198,14 +190,11 @@
   position: relative;
   top: 20px;
   z-index: 1;
-  ;
-  
 }
 
-.navBarContainer{
+.navBarContainer {
   border-radius: 10px !important;
 }
-
 
 .button-29 {
   align-items: center;
@@ -288,11 +277,6 @@
     margin-right: 10%;
   }
 
-  .testT {
-    width: 100%;
-    padding-right: 11.5%;
-  }
-
   .hoverClass {
     display: flex;
     flex-direction: row;
@@ -354,12 +338,6 @@
     margin-left: 10%;
     margin-right: 10%;
   }
-
-  /* .descHome {
-    width: 200px;
-    display: flex;
-    justify-content: center;
-  } */
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -397,8 +375,6 @@
   .navBarHome {
     margin-left: 10%;
     margin-right: 10%;
-    /* padding-left: 4.85%;
-    padding-right: 5%; */
     position: relative;
     top: 20px;
     z-index: 1;

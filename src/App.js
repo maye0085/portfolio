@@ -34,50 +34,49 @@ function App() {
             <Navbar.Toggle aria-controls="" />
             <Navbar.Collapse id="navbarScroll">
               <Nav className="me-auto my-2 my-lg-0">
-                <div className="myDiv">
+                <div className="divContainerIconsHome">
                   <Nav.Link href="#action1">Home</Nav.Link>
                   <img
-                    className="hideMe"
-                    src={GithubHome}
+                    src={JavascriptIcon}
                     style={{
                       // marginRight: "5px",
                       marginTop: "13px",
                       width: "15px",
                       height: "15px",
                     }}
-                    alt="Github Icon"
+                    alt="Javascript Icon"
                   ></img>
                 </div>
-                <div className="myDiv">
+                <div className="divContainerIconsHome">
                   <Nav.Link href="#aboutMe">About Me</Nav.Link>
                   <img
-                    src={GithubHome}
+                    src={ReactIcon}
                     style={{
                       // marginRight: "5px",
                       marginTop: "13px",
                       width: "15px",
                       height: "15px",
                     }}
-                    alt="Github Icon"
+                    alt="React Icon"
                   ></img>
                 </div>
-                <div className="myDiv">
+                <div className="divContainerIconsHome">
                   <Nav.Link href="#skillsCard">Skills</Nav.Link>
                   <img
-                    src={GithubHome}
+                    src={Html5Icon}
                     style={{
                       // marginRight: "5px",
                       marginTop: "13px",
                       width: "15px",
                       height: "15px",
                     }}
-                    alt="Github Icon"
+                    alt="Html Icon"
                   ></img>
                 </div>
-                <div className="myDiv">
+                <div className="divContainerIconsHome">
                   <Nav.Link href="#experienceCard">Experience</Nav.Link>
                   <img
-                    src={GithubHome}
+                    src={CssIcon}
                     style={{
                       marginRight: "5px",
                       marginTop: "13px",
@@ -87,7 +86,7 @@ function App() {
                     alt="Github Icon"
                   ></img>
                 </div>
-                <div className="myDiv">
+                <div className="divContainerIconsHome">
                   <Nav.Link href="#contactCard">Contact</Nav.Link>
                   <img
                     src={GithubHome}
@@ -122,7 +121,7 @@ function App() {
                 style={{
                   width: "70%",
                 }}
-                alt="Github Icon"
+                alt="Background"
               ></img>
 
               <img
@@ -176,8 +175,8 @@ function App() {
                 <h2 className="fw-bold">Welcome I'm</h2>
               </div>
 
-              <div className="testAnim">
-                <div className="testContent">
+              <div className="homeAnimContainer">
+                <div className="homeAnim">
                   <h4>Dustin Mayer</h4>
                   <h4>Dustin Mayer</h4>
                 </div>
@@ -479,7 +478,7 @@ function App() {
                   height: "400px",
                   width: "180px",
                 }}
-                alt="Calculator"
+                alt="Demo Pic1"
               ></img>
               <img
                 src={android2}
@@ -487,7 +486,7 @@ function App() {
                   height: "400px",
                   width: "180px",
                 }}
-                alt="Calculator2"
+                alt="Demo Pic2"
               ></img>
               <img
                 src={android3}
@@ -495,7 +494,7 @@ function App() {
                   height: "400px",
                   width: "180px",
                 }}
-                alt="Calculator3"
+                alt="Demo Pic3"
               ></img>
             </div>
           </div>
@@ -546,7 +545,6 @@ function App() {
                   src={GithubHome}
                   style={{
                     marginLeft: "20px",
-
                     width: "40px",
                     height: "40px",
                   }}
@@ -563,7 +561,6 @@ function App() {
                   src={ResumeHome}
                   style={{
                     marginLeft: "20px",
-
                     width: "40px",
                     height: "40px",
                   }}
