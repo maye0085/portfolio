@@ -114,12 +114,12 @@ function App() {
           <div className="card-body cardHome  ">
             <div className="row justify-content-center">
               {/* ----------- Avatar -------------- */}
-
+              
               <img
                 className="backgroundAvatar"
                 src={BackgroundAvatar}
                 style={{
-                  width: "70%",
+                 
                 }}
                 alt="Background"
               ></img>
@@ -128,7 +128,7 @@ function App() {
                 className="avatarMe"
                 src={Avatar}
                 style={{
-                  width: "70%",
+                  
                 }}
                 alt="Github Icon"
               ></img>
@@ -404,7 +404,7 @@ function App() {
                   patient care and streamlined operations for Premergency Inc.
                 </p>
               </div>
-              <h2 className="row justify-content-center">Premergency Demo</h2>
+              <h2 className="row justify-content-center">PremergencyDemo</h2>
               <div className="row justify-content-center">
                 <video
                   src={PremergencyDemo}

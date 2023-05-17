@@ -33,17 +33,20 @@
 
 .backgroundAvatar {
   z-index: 2;
-  display: inline;
+
   position: relative;
-  right: 2px;
+ 
   top: 2px;
+  width: 50% !important;
+ 
 }
 
 .avatarMe {
   z-index: 3;
   position: absolute;
-  top: 90px;
-  width: 68% !important;
+  top: 100px;
+  width: 46% !important;
+  
 }
 
 .topHeyHeader {
@@ -52,12 +55,7 @@
   justify-content: center;
 }
 
-.avatarImg {
-  z-index: 3;
-  position: relative;
-  display: inline;
-  bottom: 300px;
-}
+
 
 .homeAnim {
   margin-top: 20px;
@@ -121,6 +119,7 @@
 .divContainerIconsHome {
   display: flex;
   flex-direction: row;
+  
 }
 
 .divContainerIconsHome img {
@@ -146,13 +145,6 @@
   margin-left: 10%;
 }
 
-.floatingIcon {
-  width: 20px;
-  height: 20px;
-  margin-top: 4px;
-  position: relative;
-  left: 8px;
-}
 
 .dustinHeader {
   padding-top: 10px;
@@ -260,6 +252,7 @@
     height: 100%;
   } */
 
+  
   .descHome {
     width: 400px !important;
     display: flex;
@@ -289,18 +282,8 @@
     visibility: visible;
   }
 
-  .floatingIcon {
-    width: 15px;
-    height: 15px;
-    position: relative;
-    top: 2px;
-    left: 2px;
-    margin-right: 8px;
-  }
 
-  .iconRow {
-    width: 500px !important;
-  }
+
 
   .descHome {
     width: 300px;
