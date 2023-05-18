@@ -1,6 +1,6 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import React from "react";
+import React,{useEffect} from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import EmailHome from "./assets/emailHome.png";
 import GithubHome from "./assets/githubHome.png";
@@ -21,7 +21,17 @@ import ResumeDownload from "./assets/resume.pdf";
 import Avatar from "./assets/avatar.svg";
 import BackgroundAvatar from "./assets/Path.svg";
 
+
+
+
 function App() {
+
+
+  useEffect(() => {
+    document.title = "Dustin Portfolio"
+  }, [])
+
+
   return (
     <div className="webBackground ">
       {/* --------------------  Nav ----------------------- */}
