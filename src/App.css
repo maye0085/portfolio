@@ -20,6 +20,10 @@
   padding-bottom: 15px;
 }
 
+.iconRow{
+  width: 65% !important;
+}
+
 .navbar {
   border-radius: 20px;
 }
