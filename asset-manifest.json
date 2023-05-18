@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.ba17e2c0.css",
-    "main.js": "/portfolio/static/js/main.c2658779.js",
-    "static/js/787.bf90b066.chunk.js": "/portfolio/static/js/787.bf90b066.chunk.js",
-    "static/media/CP-CME-Demo.mp4": "/portfolio/static/media/CP-CME-Demo.496eabd4694c903c9454.mp4",
-    "static/media/Android1.png": "/portfolio/static/media/Android1.0bfdf2bf34f87722f520.png",
-    "static/media/Android2.png": "/portfolio/static/media/Android2.2de7bb27b3c8c76e11df.png",
-    "static/media/Android3.png": "/portfolio/static/media/Android3.8db10bd49e8948637732.png",
-    "static/media/resume.pdf": "/portfolio/static/media/resume.eb8e794c1352bf87d9c8.pdf",
-    "static/media/premergencyInc.svg": "/portfolio/static/media/premergencyInc.43f5f70b681902d3b4a42d8ea627270d.svg",
-    "static/media/avatar.svg": "/portfolio/static/media/avatar.156450ea8d93d99f5776723cc3a2786a.svg",
-    "index.html": "/portfolio/index.html",
-    "static/media/Path.svg": "/portfolio/static/media/Path.aa9752cf145b0183caffea017bdf0c29.svg",
-    "main.ba17e2c0.css.map": "/portfolio/static/css/main.ba17e2c0.css.map",
-    "main.c2658779.js.map": "/portfolio/static/js/main.c2658779.js.map",
-    "787.bf90b066.chunk.js.map": "/portfolio/static/js/787.bf90b066.chunk.js.map"
+    "main.css": "/my-portfolio-web/static/css/main.ba17e2c0.css",
+    "main.js": "/my-portfolio-web/static/js/main.114695f6.js",
+    "static/js/787.bf90b066.chunk.js": "/my-portfolio-web/static/js/787.bf90b066.chunk.js",
+    "static/media/CP-CME-Demo.mp4": "/my-portfolio-web/static/media/CP-CME-Demo.496eabd4694c903c9454.mp4",
+    "static/media/Android1.png": "/my-portfolio-web/static/media/Android1.0bfdf2bf34f87722f520.png",
+    "static/media/Android2.png": "/my-portfolio-web/static/media/Android2.2de7bb27b3c8c76e11df.png",
+    "static/media/Android3.png": "/my-portfolio-web/static/media/Android3.8db10bd49e8948637732.png",
+    "static/media/resume.pdf": "/my-portfolio-web/static/media/resume.eb8e794c1352bf87d9c8.pdf",
+    "static/media/premergencyInc.svg": "/my-portfolio-web/static/media/premergencyInc.43f5f70b681902d3b4a42d8ea627270d.svg",
+    "static/media/avatar.svg": "/my-portfolio-web/static/media/avatar.156450ea8d93d99f5776723cc3a2786a.svg",
+    "index.html": "/my-portfolio-web/index.html",
+    "static/media/Path.svg": "/my-portfolio-web/static/media/Path.aa9752cf145b0183caffea017bdf0c29.svg",
+    "main.ba17e2c0.css.map": "/my-portfolio-web/static/css/main.ba17e2c0.css.map",
+    "main.114695f6.js.map": "/my-portfolio-web/static/js/main.114695f6.js.map",
+    "787.bf90b066.chunk.js.map": "/my-portfolio-web/static/js/787.bf90b066.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ba17e2c0.css",
-    "static/js/main.c2658779.js"
+    "static/js/main.114695f6.js"
   ]
 }
