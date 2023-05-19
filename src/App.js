@@ -35,8 +35,8 @@ function App() {
   return (
     <div className="webBackground ">
       {/* --------------------  Nav ----------------------- */}
-      <div className="navBarHome ">
-        <Navbar bg="white" expand="lg">
+      <div className="navBarHome fixed-top ">
+        <Navbar bg="white" expand="lg" c>
           <Container fluid className="navBarContainer">
             <Navbar.Brand className="dustinHeader" href="#">
               Dustin
@@ -511,7 +511,7 @@ function App() {
         </div>
         {/* ------------- Contact Card --------------- */}
         <div id="contactCard" className="card mt-4 ">
-          <div className="card-body">
+          <div className="card-body ">
             <h1
               className="justify-content-center row"
               style={{ color: "#4F58A0" }}
@@ -519,7 +519,7 @@ function App() {
               Contact
             </h1>
 
-            <div className="mt-3 p-5">
+            <div className="mt-3 p-4 ">
               <h5 className="p-1">
                 LinkedIn:{" "}
                 <a href="https://www.linkedin.com/in/dustin-mayer/">
@@ -535,13 +535,12 @@ function App() {
                   alt="LinkedIn Icon"
                 ></img>
               </h5>
-              <h5 className="p-1">
-                Email:{" "}
-                <a href="mailto:dmayer0615@gmail.com">dmayer0615@gmail.com</a>
+              <h5 className="p-1 ">
+                Email: <a href="mailto:dmayer0615@gmail.com">dmayer0615@gmail.com</a>
                 <img
                   src={EmailHome}
                   style={{
-                    marginLeft: "25px",
+                    marginLeft: "15px",
                     width: "50px",
                     height: "40px",
                   }}

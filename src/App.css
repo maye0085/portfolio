@@ -19,9 +19,11 @@
   height: 100%;
   width: 100%;
   padding:0cm;
-  /* padding-bottom: 15px; */
+  padding-bottom: 15px;
+  padding-top: 40px;
 }
 html, body {
+  
   max-width: 100%;
   overflow-x: hidden;
 }
@@ -32,7 +34,9 @@ html, body {
 }
 
 .navbar {
-  border-radius: 20px;
+  /* border-radius: 20px; */
+  border-radius: 20px 20px 0px 0px;
+  margin-top: 14px;
 }
 
 .homeAnimContainer {
@@ -175,6 +179,7 @@ html, body {
 
 .cardHome {
   margin-top: 70px;
+  
 }
 
 .contactButton {
@@ -190,8 +195,7 @@ html, body {
   margin-right: 5.1%;
   /* padding-left: 4.85%;
   padding-right: 5%; */
-  position: relative;
-  top: 20px;
+  
   z-index: 1;
 }
 
