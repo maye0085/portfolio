@@ -18,19 +18,23 @@
   );
   height: 100%;
   width: 100%;
-  padding:0cm;
+  padding: 0cm;
   padding-bottom: 15px;
   padding-top: 40px;
 }
-html, body {
-  
+html,
+body {
   max-width: 100%;
   overflow-x: hidden;
 }
 
-
-.iconRow{
+.iconRow {
   width: 65% !important;
+  
+}
+
+.iconRow img {
+  margin-top: 5px;
 }
 
 .navbar {
@@ -46,22 +50,25 @@ html, body {
   font-family: "Poppins", sans-serif;
 }
 
+.canadianSalesCont img{
+    margin-top: 5px;
+  
+}
+
 .backgroundAvatar {
   z-index: 2;
 
   position: relative;
- 
+
   top: 2px;
   width: 50% !important;
- 
 }
 
 .avatarMe {
   z-index: 3;
   position: absolute;
-  top: 100px;
+  top: 98px;
   width: 46% !important;
-  
 }
 
 .topHeyHeader {
@@ -69,8 +76,6 @@ html, body {
   display: flex;
   justify-content: center;
 }
-
-
 
 .homeAnim {
   margin-top: 20px;
@@ -134,7 +139,6 @@ html, body {
 .divContainerIconsHome {
   display: flex;
   flex-direction: row;
-  
 }
 
 .divContainerIconsHome img {
@@ -160,7 +164,6 @@ html, body {
   margin-left: 10%;
 }
 
-
 .dustinHeader {
   padding-top: 10px;
   font-family: Didot;
@@ -179,7 +182,6 @@ html, body {
 
 .cardHome {
   margin-top: 70px;
-  
 }
 
 .contactButton {
@@ -195,7 +197,7 @@ html, body {
   margin-right: 5.1%;
   /* padding-left: 4.85%;
   padding-right: 5%; */
-  
+
   z-index: 1;
 }
 
@@ -267,7 +269,6 @@ html, body {
     height: 100%;
   } */
 
-  
   .descHome {
     width: 400px !important;
     display: flex;
@@ -296,9 +297,6 @@ html, body {
   .hoverClass:hover img {
     visibility: visible;
   }
-
-
-
 
   .descHome {
     width: 300px;

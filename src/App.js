@@ -129,7 +129,6 @@ function App() {
                 className="backgroundAvatar"
                 src={BackgroundAvatar}
                 style={{
-                 
                 }}
                 alt="Background"
               ></img>
@@ -138,7 +137,6 @@ function App() {
                 className="avatarMe"
                 src={Avatar}
                 style={{
-                  
                 }}
                 alt="Github Icon"
               ></img>
@@ -173,7 +171,7 @@ function App() {
                   src={ResumeHome}
                   style={{
                     width: "55px",
-                    height: "30px",
+                    height: "30px",   
                   }}
                   alt="Resume Icon"
                 ></img>
@@ -295,6 +293,8 @@ function App() {
                 style={{
                   width: "90px",
                   height: "75px",
+                  position: "relative",
+                  left: "10px"
                 }}
                 alt="React Icon"
               ></img>
@@ -481,7 +481,7 @@ function App() {
                 in people's lives.
               </p>
             </div>
-            <div className="justify-content-center row">
+            <div className="justify-content-center row canadianSalesCont">
               <img
                 src={android1}
                 style={{
@@ -518,9 +518,8 @@ function App() {
             >
               Contact
             </h1>
-
-            <div className="mt-3 p-4 ">
-              <h5 className="p-1">
+            <div className="mt-3 mx-4 justify-content-center row ">
+              <h5 className="">
                 LinkedIn:{" "}
                 <a href="https://www.linkedin.com/in/dustin-mayer/">
                   Dustin Mayer
@@ -529,38 +528,38 @@ function App() {
                   src={LinkedInHome}
                   style={{
                     marginLeft: "20px",
-                    width: "40px",
-                    height: "40px",
+                    width: "30px",
+                    height: "30px",
                   }}
                   alt="LinkedIn Icon"
                 ></img>
               </h5>
-              <h5 className="p-1 ">
+              <h5 className="">
                 Email: <a href="mailto:dmayer0615@gmail.com">dmayer0615@gmail.com</a>
                 <img
                   src={EmailHome}
                   style={{
                     marginLeft: "15px",
-                    width: "50px",
-                    height: "40px",
+                    width: "40px",
+                    height: "30px",
                   }}
                   alt="Email Icon"
                 ></img>
               </h5>
-              <h5 className="p-1">
+              <h5 className="">
                 Github Username:{" "}
                 <a href="https://github.com/maye0085">maye0085</a>
                 <img
                   src={GithubHome}
                   style={{
                     marginLeft: "20px",
-                    width: "40px",
-                    height: "40px",
+                    width: "30px",
+                    height: "30px",
                   }}
                   alt="Github Icon"
                 ></img>
               </h5>
-              <h5 className="p-1">
+              <h5 className="">
                 Resume: {/* --------------- Add Resume ----------------- */}
                 <a href={ResumeDownload} download>
                   Click to Download
@@ -570,8 +569,8 @@ function App() {
                   src={ResumeHome}
                   style={{
                     marginLeft: "20px",
-                    width: "40px",
-                    height: "40px",
+                    width: "30px",
+                    height: "30px",
                   }}
                   alt="Github Icon"
                 ></img>
