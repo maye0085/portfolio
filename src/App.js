@@ -230,14 +230,14 @@ function App() {
               About Me
             </h1>
 
-            <div className="row justify-content-center  my-5">
-              <img
+            <div className="row justify-content-center  my-3">
+              {/* <img
                 src={AboutMeIcon}
                 style={{
                   width: " 250px",
                 }}
                 alt="About Me Icon"
-              ></img>
+              ></img> */}
             </div>
 
             <p>
@@ -369,7 +369,7 @@ function App() {
               Experience
             </h1>
             <h3 className="text-center justify-content-center row">
-              Community Paramedic <br /> Cross Platform App at Premergeny Inc
+              Community Paramedic React Application <br/> Coop at Premergeny Inc
             </h3>
 
             <div className="row justify-content-center my-3">
@@ -414,12 +414,16 @@ function App() {
                   patient care and streamlined operations for Premergency Inc.
                 </p>
               </div>
-              <h2 className="row justify-content-center">PremergencyDemo</h2>
-              <div className="row justify-content-center">
+              <h2 className="row justify-content-center">Premergency Demo</h2>
+              <div className="row justify-content-center ">
                 <video
+           
                   src={PremergencyDemo}
-                  width="420"
-                  height="540"
+                  width="420px"
+                  style={{
+                    maxWidth: "520px"
+                  }}
+                  height="540px"
                   controls
                 ></video>
               </div>
@@ -521,7 +525,7 @@ function App() {
             <div className="mt-3 mx-4 justify-content-center row ">
               <h5 className="">
                 LinkedIn:{" "}
-                <a href="https://www.linkedin.com/in/dustin-mayer/">
+                <a href="https://www.linkedin.com/in/dustin-mayer-29a56199/">
                   Dustin Mayer
                 </a>
                 <img
@@ -547,7 +551,7 @@ function App() {
                 ></img>
               </h5>
               <h5 className="">
-                Github Username:{" "}
+                Github:{" "}
                 <a href="https://github.com/maye0085">maye0085</a>
                 <img
                   src={GithubHome}
@@ -562,7 +566,7 @@ function App() {
               <h5 className="">
                 Resume: {/* --------------- Add Resume ----------------- */}
                 <a href={ResumeDownload} download>
-                  Click to Download
+                  Download
                 </a>
                 <img
                   className="hideMe"
